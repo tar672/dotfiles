@@ -24,4 +24,3 @@ do
 done
 
 source ~/.bashrc
-cd -

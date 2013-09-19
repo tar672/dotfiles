@@ -40,6 +40,7 @@ alias pg='ps -Af | grep $1'     # requires an argument (note: /usr/bin/pg is ins
 alias acp='rsync -P'            # advanced copying, usage: acp [-R,-r] source destination 
 
 # ls
+alias l='ls'
 alias ls='ls -hF --color=auto'
 alias lr='ls -R'                    # recursive ls
 alias ll='ls -la'
