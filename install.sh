@@ -2,7 +2,7 @@
 
 if [ -d ~/.dotfiles ]; then
   cd ~/.dotfiles
-  git pull origin
+  git pull -q origin
 else
   git clone --recursive -q https://github.com/tar672/dotfiles.git ~/.dotfiles
 fi
