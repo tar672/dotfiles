@@ -8,18 +8,20 @@ else
 fi
 
 cd ~/.dotfiles/dotfiles
+
+git checkout -b not-a-dev-branch
+mkdir ~/.dotfiles/old
 for file in *
 do
-	if [ -f ~/.$file ]; then
-		echo "Overwrote $file"
-		mv ~/.$file ../.old
-  fi
+  echo "Overwrote $file"
+  mv -f ~/.$file ../old/
 done
 echo "old files are saved in ~/.dotfiles/.old"
 
 for file in *
 do
-	ln -s -f ~/.dotfiles/dotfiles/$file ~/.$file
+	ln -s ~/.dotfiles/dotfiles/$file ~/.$file
 done
 
 source ~/.bashrc
+cd -
