@@ -4,7 +4,7 @@ if [ -d ~/.dotfiles ]; then
   cd ~/.dotfiles
   git pull origin
 else
-  git clone --recursive https://github.com/tar672/dotfiles.git ~/.dotfiles
+  git clone --recursive -q https://github.com/tar672/dotfiles.git ~/.dotfiles
 fi
 
 cd ~/.dotfiles/dotfiles
