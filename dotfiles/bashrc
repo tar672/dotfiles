@@ -182,7 +182,7 @@ bash_prompt() {
     local UC=$M                 # user's color
     [ $UID -eq "0" ] && UC=$R   # root's color
     
-    PS1="$TITLEBAR${UC}\u${EMK}@${EMM}\h ${EMB}\${NEW_PWD}\$(__git_ps1 ' ${Y}(%s) ')${EMC}\$${NONE} "
+    PS1="$TITLEBAR${UC}\u${EMK}@${EMM}\h ${EMB}\${NEW_PWD}\$(__git_ps1 ' ${Y}(%s) ')${EMC} \$${NONE} "
     PS2="> "
     PS3="> "
     PS4="+ "

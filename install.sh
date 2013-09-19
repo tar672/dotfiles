@@ -2,25 +2,27 @@
 
 if [ -d ~/.dotfiles ]; then
   cd ~/.dotfiles
-  git pull -q origin
+  git pull -q origin master
 else
   git clone --recursive -q https://github.com/tar672/dotfiles.git ~/.dotfiles
 fi
 
 cd ~/.dotfiles/dotfiles
 
-git checkout -b not-a-dev-branch
-mkdir ~/.dotfiles/old
+if [ ! -d ~/.dotfiles/old ]; then
+  mkdir ~/.dotfiles/old
+fi
 for file in *
 do
-  echo "Overwrote $file"
-  mv -f ~/.$file ../old/
+	if [ -d $file ] || [ -f $file ]; then
+		echo "$file Moved to ~/.dotfiles/old/$file"
+    mv -f ~/.$file ../old/
+  fi
 done
-echo "old files are saved in ~/.dotfiles/.old"
 
 for file in *
 do
-	ln -s ~/.dotfiles/dotfiles/$file ~/.$file
+	ln -s -f ~/.dotfiles/dotfiles/$file ~/.$file
 done
 
 source ~/.bashrc
