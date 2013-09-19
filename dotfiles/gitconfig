@@ -1,0 +1,10 @@
+[user]
+	email = tomasrobertson@ymail.com
+	name = Tom Robertson
+
+[alias]
+	s = status
+	m = mergetool -t p4merge
+
+[color]
+	ui = true
