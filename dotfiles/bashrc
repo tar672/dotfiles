@@ -8,6 +8,8 @@
 # Sourcing
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 [ -r ~/.git-prompt.sh ] && . ~/.git-prompt.sh
+[ -r ~/.git-completion.sh ] && . ~/.git-completion.sh
+
 
 # Exports
 # This export is meant to fix the incorrect export given by dbus regard sockets so 
