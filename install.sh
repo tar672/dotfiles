@@ -14,15 +14,15 @@ if [ ! -d ~/.dotfiles/old ]; then
 fi
 for file in *
 do
-	if [ -d $file ] || [ -f $file ]; then
-		echo "$file Moved to ~/.dotfiles/old/$file"
+  if [ -d $file ] || [ -f $file ]; then
+    echo "$file Moved to ~/.dotfiles/old/$file"
     mv -f ~/.$file ../old/
   fi
 done
 
 for file in *
 do
-	ln -s -f ~/.dotfiles/dotfiles/$file ~/.$file
+  ln -s -f ~/.dotfiles/dotfiles/$file ~/.$file
 done
 
 source ~/.bashrc
