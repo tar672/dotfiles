@@ -10,6 +10,7 @@
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 [ -r ~/.git-prompt.sh ] && . ~/.git-prompt.sh
 [ -r ~/.git-completion.sh ] && . ~/.git-completion.sh
+[[ -s ~/.autojump/etc/profile.d/autojump.bash ]] && . ~/.autojump/etc/profile.d/autojump.bash
 
 
 # Exports
