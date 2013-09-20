@@ -14,8 +14,8 @@ if [ ! -d ~/.dotfiles/old ]; then
 fi
 for file in *
 do
-  if [ -d $file ] || [ -f $file ]; then
-    echo "$file Moved to ~/.dotfiles/old/$file"
+  if [ -d ~/.$file ] || [ -f ~/.$file ]; then
+    echo "~/.$file Moved to ~/.dotfiles/old/$file"
     mv -f ~/.$file ../old/
   fi
 done
