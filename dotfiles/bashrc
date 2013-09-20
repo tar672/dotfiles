@@ -192,7 +192,7 @@ bash_prompt() {
     # extra backslash in front of \$ to make bash colorize the prompt
 }
 
-PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;}bash_prompt_command"
+PROMPT_COMMAND=bash_prompt_command
 bash_prompt
 unset bash_prompt
 # Has to be sourced here because it messes with PROMPT_COMMAND
