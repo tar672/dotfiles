@@ -1,6 +1,7 @@
 #
 # /etc/bash.bashrc
 #
+# Courtesy of Hans-Nikolai Viessmann, http://hans.viessmann.co/
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
