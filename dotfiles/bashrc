@@ -13,7 +13,7 @@
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 [ -r ~/.git-prompt.sh ] && . ~/.git-prompt.sh
 [ -r ~/.git-completion.sh ] && . ~/.git-completion.sh
-[ - /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
+[ -r /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
 
 
 
