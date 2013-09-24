@@ -6,6 +6,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# PATH stuff
+[ -r ~/.cabal/bin ] && PATH=$PATH:~/.cabal/bin
+
 # Sourcing
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 [ -r ~/.git-prompt.sh ] && . ~/.git-prompt.sh
